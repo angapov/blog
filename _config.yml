@@ -16,17 +16,16 @@
 title: Linux admin blog
 email: angapov@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
-  Just a very simple Linux admin blog
+  Kubernetes, GKE, Linux and so on
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://linux-admin.tech" # the base hostname & protocol for your site, e.g. http://example.com
 github_username:  angapov
 
 # Build settings
 markdown: kramdown
 theme: jekyll-theme-cayman
-rss: false
 show_excerpts: true
-excerpt_separator: <!–break–>
+excerpt_separator: <!–more–>
 plugins:
 - jekyll-feed
 
