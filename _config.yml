@@ -23,7 +23,7 @@ github_username:  angapov
 
 # Build settings
 markdown: kramdown
-theme: jekyll-theme-time-machine
+theme: jekyll-theme-cayman
 rss: false
 show_excerpts: true
 excerpt_separator: <!–break–>
