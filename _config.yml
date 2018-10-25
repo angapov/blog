@@ -15,12 +15,13 @@
 # in the templates via {{ site.myvariable }}.
 title: Linux admin blog
 email: angapov@gmail.com
-description: >- # this means to ignore newlines until "baseurl:"
+description: >-
   Kubernetes, GKE, Linux and so on
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://linux-admin.tech" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: ""
+url: "https://linux-admin.tech"
 github_username:  angapov
 google_analytics: UA-128092207-1
+github: [metadata]
 
 # Build settings
 markdown: kramdown
