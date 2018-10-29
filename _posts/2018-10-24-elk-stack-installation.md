@@ -11,6 +11,11 @@ This solution describes how to very quickly install Elastisearch, Fluentd and Ki
 helm install stable/elasticsearch --namespace logging --name es --set master.persistence.size=10Gi
 ```
 This by default will create 3 master pods, 2 data pods and 2 client pods of Elasticsearch. Wait for pods to be all 1/1 Running.
+
+Then create elasticsearch-curator cronjob that ensures data retention in Elasticsearch equal to 7 days by default.
+```
+helm install stable/elasticsearch-curator --name es-curator --namespace logging --set config.elasticsearch.hosts={'es-elasticsearch-client'}
+```
 ```
 helm install stable/fluentd-elasticsearch --namespace logging --name fluentd --set elasticsearch.host=es-elasticsearch-client
 ```
